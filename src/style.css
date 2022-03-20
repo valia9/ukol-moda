@@ -1,4 +1,75 @@
+
 /*
-  Tady nic není, ale by být mělo.
-  Sem vlož CSS z html-vzoru, které je společné pro celou aplikaci
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333232;
+  background: #fff9f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+
+
+/*
+  ------------------
+  PRODUCT
+  ------------------
+*/
+.product {
+	border: 1px solid #dcd7d0;
+	display: flex;
+	flex-direction: column;
+}
+
+.product__image {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+.product__content {
+	flex: 1;
+	padding: 20px;
+	background: #fffffc;
+}
+
+.product__name {
+	margin: 0 0 20px 0;
+}
+
+.product__description {
+	font-size: 15px;
+}
+
+.product__price {
+	font-weight: 700;
+	margin-bottom: 0;
+}
